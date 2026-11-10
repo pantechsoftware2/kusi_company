@@ -61,9 +61,9 @@ export default function Home() {
         <div className="section-kicker reveal"><span>04 / Why Kusi and Company</span><span>Simple. Direct. Local.</span></div>
         <h2 className="display-heading reveal">The right components.<br />A direct connection.</h2>
         <div className="benefit-grid">
-          <article className="benefit-card reveal"><span>01</span><div><h3>Focused hardware range</h3><p>Explore five essential fastening product categories.</p></div></article>
-          <article className="benefit-card reveal"><span>02</span><div><h3>Direct product inquiries</h3><p>Discuss requirements, pricing, and availability with the business.</p></div></article>
-          <article className="benefit-card reveal"><span>03</span><div><h3>Kolkata-based business</h3><p>Find us at our Manohar Das Chowk location.</p></div></article>
+          <article className="benefit-card reveal"><div className="benefit-image"><Image src="/images/benefits/focused-hardware-range.webp" alt="Machine screw, nut, flat washer, spring washer, and split pin arranged together" fill sizes="(max-width: 900px) 100vw, 33vw" /></div><span>01</span><div className="benefit-copy"><h3>Focused hardware range</h3><p>Explore five essential fastening product categories.</p></div></article>
+          <article className="benefit-card reveal"><div className="benefit-image"><Image src="/images/benefits/direct-product-inquiry.webp" alt="A phone inquiry interface beside a machine screw and nut" fill sizes="(max-width: 900px) 100vw, 33vw" /></div><span>02</span><div className="benefit-copy"><h3>Direct product inquiries</h3><p>Discuss requirements, pricing, and availability with the business.</p></div></article>
+          <article className="benefit-card reveal"><div className="benefit-image"><Image src="/images/benefits/kolkata-location.webp" alt="Hardware components and an amber location marker arranged on a Kolkata-inspired city map" fill sizes="(max-width: 900px) 100vw, 33vw" /></div><span>03</span><div className="benefit-copy"><h3>Kolkata-based business</h3><p>Find us at our Manohar Das Chowk location.</p></div></article>
         </div>
       </section>
 
