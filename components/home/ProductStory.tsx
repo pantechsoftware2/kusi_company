@@ -16,5 +16,15 @@ export function ProductStory() {
       <div className="story-visual"><div className="story-ring" /><div className="story-image" ref={imageWrap}><Image src={product.image} alt={product.alt} fill sizes="(max-width: 800px) 90vw, 55vw" priority /></div><span className="story-label">ROTATION / FORM / FUNCTION</span></div>
       <div className="story-list">{products.map((p, i) => <span className={i === active ? "active" : ""} key={p.slug}>{p.number} — {p.name}</span>)}</div>
     </div>
+    <div className="story-mobile">
+      <div className="story-mobile-head"><p className="eyebrow light">03 / Component study</p><h2>Hardware<br />in focus.</h2><p>Swipe to explore the complete product range.</p></div>
+      <div className="story-mobile-track">
+        {products.map((item) => <article className="story-mobile-card reveal" key={item.slug}>
+          <div className="story-mobile-image"><span>{item.number}</span><Image src={item.image} alt={item.alt} fill sizes="82vw" /></div>
+          <div className="story-mobile-copy"><h3>{item.name}</h3><p>{item.shortDescription}</p></div>
+        </article>)}
+      </div>
+      <div className="story-mobile-hint"><span>Swipe</span><span>01 — 05</span></div>
+    </div>
   </section>;
 }
