@@ -1,0 +1,7 @@
+import type { Metadata } from "next";
+import { MapPin, MessageCircle, Phone, UserRound } from "lucide-react";
+import { InquiryForm } from "@/components/contact/InquiryForm";
+import { BUSINESS } from "@/lib/business";
+
+export const metadata: Metadata = { title: "Contact", description: "Contact Kusi and Company in Kolkata for hardware product pricing and availability." };
+export default function ContactPage() { return <main id="main-content" className="inner-page contact-page"><section className="contact-layout"><div className="contact-panel grid-bg-dark"><p className="eyebrow light">Contact / Direct inquiry</p><h1>Let&apos;s<br /><em>connect.</em></h1><p>Tell us what hardware products you need. We&apos;ll help you start the conversation through WhatsApp.</p><div className="contact-details"><a href={BUSINESS.phoneHref}><Phone /><span>Phone<strong>{BUSINESS.phone}</strong></span></a><div><UserRound /><span>Contact person<strong>{BUSINESS.contact}</strong></span></div><a href={BUSINESS.maps} target="_blank" rel="noreferrer"><MapPin /><span>Address<strong>{BUSINESS.address}</strong></span></a><a href={BUSINESS.whatsapp} target="_blank" rel="noreferrer"><MessageCircle /><span>WhatsApp<strong>Start a direct inquiry</strong></span></a></div></div><div className="form-panel"><div><p className="section-number">Inquiry form / WhatsApp</p><h2>What are you<br />looking for?</h2><p>Specifications and availability are confirmed directly. Add as much detail as you have.</p></div><InquiryForm /></div></section></main>; }
